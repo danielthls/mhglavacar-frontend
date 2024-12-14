@@ -1,0 +1,46 @@
+.mhg-header {
+    background-color: #000
+        /*var(--mhg-background-secondary-color)*/
+    ;
+    font-family: "Anton";
+    color: var(--mhg-font-secondary-color);
+    font-size: 24px;
+}
+
+.mhg-header-logo {
+    max-height: 80px;
+    flex: 0 0 auto;
+}
+
+.mhg-header-container-right {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    flex: 1 1 50%;
+}
+
+.mhg-nav-hamburger {
+    font-weight: 2000;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.mhg-nav-item {
+    display: none;
+    align-items: center;
+    font-family: "Anton";
+    color: var(--mhg-font-secondary-color);
+    font-size: 20px;
+}
+
+@media (min-width: 576px) {
+    .mhg-nav-hamburger {
+        display: none;
+    }
+
+    ;
+
+    .mhg-nav-item {
+        display: flex;
+    }
+}
