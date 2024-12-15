@@ -1,0 +1,10 @@
+.mhg-nav-item {
+    font-family: "Anton";
+    color: var(--mhg-font-secondary-color);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.mhg-nav-item:hover {
+    color: red;
+}
