@@ -61,16 +61,24 @@ main {
   letter-spacing: 3px;
   font-weight: 500;
   color: var(--mhg-font-primary-color);
+  font-size: 20px;
 }
 
-.mhg-txt-left {
-  text-align: left;
+.mhg-section-text {
+  font-family: "Roboto";
+  line-height: 1.7em;
+  color: var(--mhg-font-tertiary-color);
+  font-size: 16px;
 }
 
 @media (min-width: 576px) {
   .mhg-section-title {
     text-align: left;
     font-size: 24px;
+  }
+
+  .mhg-section-text {
+    text-align: left;
   }
 }
 
@@ -81,11 +89,46 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 header {
   height: 80px;
   display: flex;
   align-items: center;
+}
+
+@media(min-width: 1000px) {
+  nav {
+    padding: 0;
+  }
+}
+
+/*------------------------------------------*/
+/*Section*/
+
+.mhg-section-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.mhg-section-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid red;
+  gap: 20px;
+}
+
+@media (min-width: 576px) {
+  .mhg-section-container {
+    flex-direction: row;
+    gap: 0;
+  }
 }

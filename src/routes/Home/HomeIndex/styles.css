@@ -1,0 +1,38 @@
+#hero-section {
+    padding: 30px 0;
+    text-align: center;
+    margin: 0 auto;
+    gap: 20px
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    border: 1px solid green;
+}
+
+#hero-section-image {
+    width: 100%;
+    max-width: 100%;
+}
+
+#hero-image {
+    max-width: 100%;
+    border: 1px solid blue;
+}
+
+@media (min-width: 576px) {
+
+    #hero-text {
+        gap: unset;
+        justify-content: space-between;
+
+    }
+
+    #hero-section-image {
+        max-width: 50%;
+    }
+}
