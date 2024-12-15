@@ -34,10 +34,7 @@
     border: 1px solid;
     border-color: var(--mhg-card-border-color);
     padding: 20px;
-    position: absolute;
-    width: 75%;
-    margin: 4em auto;
-    width: 75%;
+    margin: 4em 0.5em 0em .5em;
     gap: 20px
 }
 
