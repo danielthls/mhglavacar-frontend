@@ -10,7 +10,7 @@ export default function Header() {
 
     const [hamburgerMenuVisible, setHamburgerMenuVisible] = useState<boolean>(false);
 
-    const [itensMenu, setItensMenu] = useState<ItemMenuDTO[]>(TempMenu)
+    const [itensMenu, /*setItensMenu*/] = useState<ItemMenuDTO[]>(TempMenu)
 
     function handleMenuExit() {
         setHamburgerMenuVisible(false);
