@@ -116,6 +116,12 @@ header {
   gap: 20px;
 }
 
+.mhg-section-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .mhg-section-container {
     flex-direction: row;

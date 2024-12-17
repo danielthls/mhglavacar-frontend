@@ -5,6 +5,10 @@
     gap: 20px
 }
 
+#hero-left-container {
+    width: 100%;
+}
+
 #hero-text {
     display: flex;
     flex-direction: column;
@@ -13,7 +17,11 @@
     width: 100%;
 }
 
-#hero-section-image {
+#hero-text p {
+    line-height: 250%;
+}
+
+#hero-right-container {
     width: 100%;
     max-width: 100%;
 }
@@ -24,13 +32,24 @@
 
 @media (min-width: 576px) {
 
-    #hero-text {
-        gap: unset;
-        justify-content: space-between;
-
+    #hero-text p {
+        line-height: 250%;
     }
 
-    #hero-section-image {
+    #hero-text {
+        justify-content: space-between;
+        max-width: 70%;
+        height: 100%;
+    }
+
+    #hero-right-container {
         max-width: 50%;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    #hero-text {
+        max-width: 70%;
     }
 }
