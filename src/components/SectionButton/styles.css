@@ -12,6 +12,7 @@
     font-weight: 700;
     transition: 0.3s;
     cursor: pointer;
+    width: 100%;
 }
 
 .mhg-btn-section:hover {

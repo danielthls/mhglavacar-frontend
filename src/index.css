@@ -56,32 +56,6 @@ main {
   margin-top: 20px;
 }
 
-.mhg-section-title {
-  font-family: "Anton";
-  letter-spacing: 3px;
-  font-weight: 500;
-  color: var(--mhg-font-primary-color);
-  font-size: 20px;
-}
-
-.mhg-section-text {
-  font-family: "Roboto";
-  line-height: 1.7em;
-  color: var(--mhg-font-tertiary-color);
-  font-size: 16px;
-}
-
-@media (min-width: 576px) {
-  .mhg-section-title {
-    text-align: left;
-    font-size: 24px;
-  }
-
-  .mhg-section-text {
-    text-align: left;
-  }
-}
-
 /*-----------------------------------*/
 /*Header*/
 
@@ -118,13 +92,49 @@ header {
 
 .mhg-section-btn-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  gap: 5px;
 }
 
 @media (min-width: 576px) {
   .mhg-section-container {
     flex-direction: row;
     gap: 0;
+  }
+
+  .mhg-section-btn-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.mhg-section-title {
+  font-family: "Anton";
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: var(--mhg-font-primary-color);
+  font-size: 20px;
+}
+
+.mhg-section-text {
+  font-family: "Roboto";
+  line-height: 1.7em;
+  color: var(--mhg-font-tertiary-color);
+  font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  .mhg-section-title {
+    font-size: 24px;
+  }
+
+  #hero-section .mhg-section-title {
+    text-align: left;
+  }
+
+  #hero-section .mhg-section-text {
+    text-align: left;
   }
 }
