@@ -13,3 +13,7 @@
     font-family: 'Roboto';
     color: var()
 }
+
+.mhg-info-title {
+    font-weight: 700;
+}
