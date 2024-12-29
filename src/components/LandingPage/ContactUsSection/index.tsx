@@ -16,7 +16,7 @@ export default function ContactUsSection() {
             <div className="mhg-section-container mhg-dual-column">
                 
                 <div className='mhg-dual-column-left-container'>
-                    <div className='mhg-dual-column-text mhg-section-text'>
+                    <div className='mhg-dual-column-text'>
                         {
                             infos &&
                             infos.map(info =>

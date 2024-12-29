@@ -3,17 +3,20 @@
 }
 
 .mhg-info-icon {
-    padding: 5px;
-    margin: 5px;
-    max-width: 32px;
-    max-height: 32px;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
 }
 
-.mhg-info-text p {
-    font-family: 'Roboto';
-    color: var()
+.mhg-info-text-container div{
+    color: var(--mhg-font-tertiary-color);
+}
+
+.mhg-info-text {
+    font-size: 14px;
 }
 
 .mhg-info-title {
+    font-size: 16px;
     font-weight: 700;
 }
