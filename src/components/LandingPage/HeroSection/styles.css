@@ -1,0 +1,12 @@
+#hero-section {
+    padding: 30px 0;
+    padding-bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    gap: 20px
+}
+
+#hero-image {
+    max-width: 100%;
+}
+

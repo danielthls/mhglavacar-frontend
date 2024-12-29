@@ -99,9 +99,9 @@ header {
 }
 
 @media (min-width: 576px) {
-  .mhg-section-container {
-    flex-direction: row;
-    gap: 0;
+  .mhg-dual-column.mhg-section-container {
+    flex-direction: row !important;
+    gap: 0 !important;
   }
 
   .mhg-section-btn-container {
@@ -125,16 +125,58 @@ header {
   font-size: 16px;
 }
 
+.mhg-dual-column-left-container {
+  width: 100%;
+}
+
+.mhg-dual-column-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.mhg-dual-column-text p {
+  line-height: 250%;
+}
+
+.mhg-dual-column-right-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+@media (min-width: 1000px) {
+  .mhg-dual-column-text {
+    max-width: 70%;
+  }
+}
+
 @media (min-width: 576px) {
   .mhg-section-title {
     font-size: 24px;
   }
 
-  #hero-section .mhg-section-title {
+  .mhg-dual-column .mhg-section-title {
     text-align: left;
   }
 
-  #hero-section .mhg-section-text {
+  .mhg-dual-column .mhg-section-text {
     text-align: left;
+  }
+
+  .mhg-dual-column-text p {
+    line-height: 250%;
+  }
+
+  .mhg-dual-column-text {
+    justify-content: space-between;
+    max-width: 70%;
+    height: 100%;
+  }
+
+  .mhg-dual-column-right-container {
+    max-width: 50%;
   }
 }

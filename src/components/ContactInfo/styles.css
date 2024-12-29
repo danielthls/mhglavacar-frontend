@@ -1,0 +1,15 @@
+.mhg-info-item {
+    display: flex;
+}
+
+.mhg-info-icon {
+    padding: 5px;
+    margin: 5px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.mhg-info-text p {
+    font-family: 'Roboto';
+    color: var()
+}
