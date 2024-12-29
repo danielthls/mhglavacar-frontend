@@ -2,7 +2,7 @@
 
 :root {
   --mhg-background-primary-color: #262626;
-  --mhg-background-secondary-color: #191919;
+  --mhg-background-secondary-color: #050505d5;
   --mhg-background-tertiary-color: #D7D3D3;
 
   --mhg-card-background-color: #191919;
@@ -42,7 +42,9 @@ main {
 /*-------------------------------------------------*/
 /* Estilos genéricos */
 
+
 .mhg-container {
+  display: flex;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -63,20 +65,26 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
 header {
+  padding: 0 20px;
   height: 80px;
   display: flex;
   align-items: center;
 }
 
-@media(min-width: 1000px) {
-  nav {
-    padding: 0;
-  }
+.mhg-menu-item div {
+  font-family: "Anton";
+  color: var(--mhg-font-secondary-color);
+  font-size: 20px;
+  transition: 0.3s;
 }
+
+.mhg-menu-item div:hover {
+  color: red;
+}
+
 
 /*------------------------------------------*/
 /*Section*/
@@ -115,7 +123,7 @@ header {
   letter-spacing: 3px;
   font-weight: 500;
   color: var(--mhg-font-primary-color);
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .mhg-section-text {
@@ -155,7 +163,7 @@ header {
 
 @media (min-width: 576px) {
   .mhg-section-title {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .mhg-dual-column .mhg-section-title {
@@ -178,5 +186,30 @@ header {
 
   .mhg-dual-column-right-container {
     max-width: 50%;
+  }
+}
+
+/* Footer */
+/*----------------------------------------*/
+footer {
+  padding: 0 20px;
+}
+
+.mhg-footer-content {
+  font-size: 12px;
+  color: var(--mhg-font-tertiary-color);
+  width: 100%;
+}
+
+.mhg-footer-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .mhg-footer-sub-container {
+    flex-direction: row;
   }
 }

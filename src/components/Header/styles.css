@@ -1,6 +1,5 @@
 .mhg-header {
-    background-color: #000
-        /*var(--mhg-background-secondary-color)*/
+    background-color: var(--mhg-background-secondary-color)
     ;
     font-family: "Anton";
     color: var(--mhg-font-secondary-color);

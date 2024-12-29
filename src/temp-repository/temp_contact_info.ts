@@ -3,21 +3,29 @@ import whatsappIcon from '../assets/whatsapp.png';
 import clockIcon from '../assets/clock.png';
 import emailIcon from '../assets/email.png';
 import instagramIcon from '../assets/instagram.png'
+import locationIcon from '../assets/pin.png'
 
 export const Infos: ContactInfoDTO[] = [
     {
+        id: 6,
+        icon: locationIcon,
+        title: 'Endereço',
+        info: 'Rua Coronel José Carvalho de Oliveira, 701, Uberaba, Curitiba',
+        url: null
+    },
+    {
         id: 1,
         icon: clockIcon,
-        title: 'De Segunda à Sexta',
-        info: 'de 7h ao meio-dia, e das 13h às 17h',
-        url: '#'
+        title: 'De segunda a sexta',
+        info: 'de 8h às 16h',
+        url: null
     },
     {
         id: 2,
         icon: clockIcon,
         title: 'Sábados',
-        info: 'de 7h ao meio-dia',
-        url: '#'
+        info: 'de 8h às 15h',
+        url: null
     },
     {
         id: 3,
@@ -40,4 +48,5 @@ export const Infos: ContactInfoDTO[] = [
         info: '@mhgesteticaautomotiva',
         url: 'https://www.instagram.com/mhgesteticaautomotiva?igsh=ejhqa2F2MWRodzgw'
     }
+    
 ]

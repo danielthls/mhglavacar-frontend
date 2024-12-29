@@ -1,17 +1,11 @@
-import { Link } from "react-router-dom";
 import './styles.css'
 
 type Props = {
     label: string;
-    linkUrl: string;
 }
 
-export default function ItemMenu({ label, linkUrl }: Props) {
+export default function ItemMenu({ label }: Props) {
     return (
-        <Link to={linkUrl}>
-            <div className='mhg-nav-item'>
-                {label}
-            </div>
-        </Link>
+        <div>{ label }</div>    
     );
 }

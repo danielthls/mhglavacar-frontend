@@ -3,5 +3,5 @@ export type ContactInfoDTO = {
     title: string;
     icon: string;
     info: string;
-    url: string;
+    url: string | null;
 }

@@ -1,5 +1,6 @@
-import { ItemMenuDTO } from '../../models/ItemMenu'
-import ItemMenu from '../ItemMenu'
+import { Link } from 'react-router-dom';
+import { ItemMenuDTO } from '../../../models/ItemMenu'
+import ItemMenu from '../../ItemMenu'
 import './styles.css'
 
 type Props = {
@@ -12,9 +13,13 @@ export default function MobileMenu({ menu, onMenuExit }: Props) {
         <div onClick={() => onMenuExit()} className='mhg-dialog-background'>
             <div className='mhg-hamburger-menu-box'>
                 {menu.map(item => (
+                    <Link to={item.linkUrl}>
                     <div className='mhg-hamburger-item-container'>
-                        <ItemMenu key={item.id} label={item.label} linkUrl={item.linkUrl} />
+                        <div className='mhg-menu-item'>
+                        <ItemMenu key={item.id} label={item.label} />
+                        </div>
                     </div>
+                    </Link>
                 ))}
             </div>
         </div>

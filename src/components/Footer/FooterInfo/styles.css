@@ -1,0 +1,36 @@
+.mhg-footer-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+}
+
+.mhg-footer-large-icon {
+    height: 32px;
+    width: 32px;
+    margin-right: 2px;
+}
+
+.mhg-footer-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mhg-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.mhg-footer-content.block {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mhg-footer-content-item, .mhg-footer-content-item a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}

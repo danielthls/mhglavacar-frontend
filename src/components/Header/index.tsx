@@ -2,15 +2,16 @@ import './styles.css';
 import logo from '../../assets/logo.png'
 import { useState } from 'react';
 import { ItemMenuDTO } from '../../models/ItemMenu';
-import { TempMenu } from '../../temp-repository/temp_menu';
-import ItemMenu from '../ItemMenu';
-import MobileMenu from '../MobileMenu';
+import MobileMenu from './MobileMenu';
+import DesktopMenu from './DesktopMenu';
 
-export default function Header() {
+type Props = {
+    menu: ItemMenuDTO[];
+}
+
+export default function Header({ menu }: Props) {
 
     const [hamburgerMenuVisible, setHamburgerMenuVisible] = useState<boolean>(false);
-
-    const [itensMenu, /*setItensMenu*/] = useState<ItemMenuDTO[]>(TempMenu)
 
     function handleMenuExit() {
         setHamburgerMenuVisible(false);
@@ -26,11 +27,7 @@ export default function Header() {
                 <img className="mhg-header-logo" src={logo} alt="MHG Lavacar" />
                 <div className='mhg-header-container-right'>
                     <div className='mhg-desktop-menu'>
-                        {
-                            itensMenu.map(item => (
-                                <ItemMenu key={item.id} label={item.label} linkUrl={item.linkUrl} />
-                            ))
-                        }
+                        <DesktopMenu menu={menu} />
                     </div>
                     <div onClick={handleMenuOpen} className='mhg-nav-hamburger'>☰</div>
                 </div>
@@ -38,7 +35,7 @@ export default function Header() {
             {
                 hamburgerMenuVisible &&
                 <MobileMenu
-                    menu={itensMenu}
+                    menu={menu}
                     onMenuExit={handleMenuExit}
                 />
             }
