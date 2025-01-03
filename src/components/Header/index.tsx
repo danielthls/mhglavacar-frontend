@@ -1,9 +1,10 @@
 import './styles.css';
 import logo from '../../assets/logo.png'
 import { useState } from 'react';
-import { ItemMenuDTO } from '../../models/ItemMenu';
+import { ItemMenuDTO } from '../../models/item-menu';
 import MobileMenu from './MobileMenu';
 import DesktopMenu from './DesktopMenu';
+import { Link } from 'react-router-dom';
 
 type Props = {
     menu: ItemMenuDTO[];
@@ -24,7 +25,9 @@ export default function Header({ menu }: Props) {
     return (
         <header className="mhg-header">
             <nav className="mhg-container">
-                <img className="mhg-header-logo" src={logo} alt="MHG Lavacar" />
+                <Link to='/'>
+                    <img className="mhg-header-logo" src={logo} alt="MHG Lavacar" />
+                </Link>
                 <div className='mhg-header-container-right'>
                     <div className='mhg-desktop-menu'>
                         <DesktopMenu menu={menu} />

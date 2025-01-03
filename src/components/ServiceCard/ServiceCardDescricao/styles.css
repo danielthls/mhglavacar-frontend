@@ -1,0 +1,34 @@
+.mhg-servico-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mhg-servico-detalhes {
+    margin: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mhg-servico-descricao {
+    width: 100%;
+}
+
+@media(min-width: 576px) {
+    .mhg-servico-container {
+        flex-direction: row;
+    }
+
+    .mhg-servico-descricao {
+        width: 65%;
+    }
+
+    .mhg-servico-detalhes {
+        width: 35%;
+            }
+
+    .mhg-servico-detalhes ul {
+    list-style-position: inside;
+}
+}

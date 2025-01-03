@@ -1,10 +1,10 @@
-import { ItemMenuDTO } from "../models/ItemMenu"
+import { ItemMenuDTO } from "../models/item-menu"
 
 export const TempMenu: ItemMenuDTO[] = [
     {
         id: 1,
         label: "Serviços",
-        linkUrl: "/"
+        linkUrl: "/servico"
     },
     {
         id: 2,

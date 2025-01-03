@@ -126,11 +126,12 @@ header {
   font-size: 24px;
 }
 
-.mhg-section-text {
+.mhg-section-text, .mhg-section-text p {
   font-family: "Roboto";
   line-height: 1.7em;
   color: var(--mhg-font-tertiary-color);
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .mhg-dual-column-left-container {
@@ -187,6 +188,35 @@ header {
   .mhg-dual-column-right-container {
     max-width: 50%;
   }
+}
+
+/* Service Card */
+/*----------------------------------------*/
+.mhg-service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mhg-card-background-color);
+  border-radius: 16px;
+  padding: 20px;
+  padding-top: 10px;
+  gap: 10px;
+  min-width: 0;
+}
+
+.mhg-service-card-title h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Anton";
+  color: var(--mhg-font-secondary-color);
+  letter-spacing: 3px;
+  font-weight: 450;
+  font-size: 18px;
+}
+
+.mhg-service-card-img {
+  display: flex;
+  width: 100%;
+  min-width: 0;
 }
 
 /* Footer */

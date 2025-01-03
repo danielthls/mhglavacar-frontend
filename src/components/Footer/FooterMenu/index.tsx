@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ItemMenuDTO } from "../../../models/ItemMenu";
+import { ItemMenuDTO } from "../../../models/item-menu";
 
 type Props = {
     menu: ItemMenuDTO[];

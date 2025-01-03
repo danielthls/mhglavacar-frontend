@@ -1,10 +1,12 @@
-export type CategoryMinDTO = {
+export type CategoriaMinDTO = {
     idCategoria: number;
     nomeCategoria: string;
+    tipo: number
 }
 
-export type CategoryDTO = {
+export type CategoriaDTO = {
     idCategoria: number;
     nomeCategoria: string;
     descricao: string;
+    tipo: number;
 }

@@ -1,26 +1,20 @@
-.mhg-service-card {
+.mhg-service-obs-price-container{
     display: flex;
     flex-direction: column;
-    background-color: var(--mhg-card-background-color);
-    border-radius: 16px;
-    padding: 20px;
-    padding-top: 10px;
-    gap: 10px;
-    min-width: 0;
+    gap: 20px;
+    justify-content: space-around;
 }
 
-.mhg-service-card-title h2{
-    display: flex;
-    justify-content: center;
-    font-family: "Anton";
-    color: var(--mhg-font-secondary-color);
-    letter-spacing: 3px;
-    font-weight: 450;
-    font-size: 18px;
+.mhg-service-item-container {
+    min-height: 100%;
 }
 
-.mhg-service-card-img {
-    display: flex;
-    width: 100%;
-    min-width: 0;
+.obs {
+   width: fit-content; 
+}
+
+@media(min-width: 576px) {
+    .mhg-service-obs-price-container{
+        flex-direction: row;
+    }
 }

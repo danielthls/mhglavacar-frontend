@@ -1,11 +1,15 @@
-import { PriceByServiceDTO } from "./Price";
+import { PrecoPorServicoDTO } from "./preco";
+import { MarcadorDTO } from './marcador'
 
 export type ServiceDTO = {
     idServico: number;
     nomeServico: string;
     descricao: string;
     imgUrl: string;
-    precos: PriceByServiceDTO[];
+    precos: PrecoPorServicoDTO[];
+    detalhes: MarcadorDTO[];
+    observacao: string;
+    precoVariavel: boolean;
 }
 
 export type ServiceMinDTO = {

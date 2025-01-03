@@ -1,5 +1,5 @@
 import './styles.css'
-import SectionButton from "../../SectionButton";
+import CteButtons from '../CteButtons';
 
 
 export default function HeroSection() {
@@ -9,10 +9,7 @@ export default function HeroSection() {
                 <div className='mhg-dual-column-text'>
                     <h1 className="mhg-section-title">AQUI SEU CARRO SAI BRILHANDO</h1>
                     <p className='mhg-section-text'>Serviços especializados em limpeza automotiva, garantindo cuidado, excelência e o brilho que seu carro merece.</p>
-                    <div className='mhg-section-btn-container'>
-                        <SectionButton label='Nossos Serviços' linkUrl='/' />
-                        <SectionButton label='Agende uma Visita' linkUrl='/' />
-                    </div>
+                    <CteButtons/>
                 </div>
             </div>
             <div className='mhg-dual-column-right-container'>

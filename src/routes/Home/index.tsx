@@ -3,7 +3,7 @@ import './styles.css'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { useState } from 'react'
-import { ItemMenuDTO } from '../../models/ItemMenu'
+import { ItemMenuDTO } from '../../models/item-menu'
 import { TempMenu } from '../../temp-repository/temp_menu'
 
 export default function Home() {
@@ -12,9 +12,9 @@ export default function Home() {
 
     return (
         <>
-            <Header menu={itensMenu}/>
+            <Header menu={itensMenu} />
             <Outlet />
-            <Footer menu={itensMenu}/>
+            <Footer menu={itensMenu} />
         </>
     )
 }
