@@ -18,13 +18,15 @@ export default function ServiceCard({ service }: Props) {
                 <ServiceCardDescricao descricao={service.descricao} detalhes={service.detalhes} />
             </div>
             <div className='mhg-service-obs-price-container'>
-                {
-                    service.observacao &&
-                    <div className='mhg-service-item-container obs'>
+
+                <div className='mhg-service-item-container obs'>
+                    {service.observacao &&
+
                         <ServiceCardObservacao obs={service.observacao} />
-                    </div>
-                }
-                <div className='mhg-service-item-container'>
+                    }
+                </div>
+
+                <div className='mhg-service-item-container preco'>
                     <ServiceCardPreco servico={service} />
                 </div>
             </div>
