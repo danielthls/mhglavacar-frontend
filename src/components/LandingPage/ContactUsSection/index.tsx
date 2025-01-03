@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import GoogleMap from '../../GoogleMap'
-import SectionButton from '../../SectionButton'
 import './styles.css'
 import { InfoContatoDTO } from '../../../models/Info-contato'
 import { Infos } from '../../../temp-repository/temp_contact_info'

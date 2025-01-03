@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import SectionButton from '../../SectionButton'
 import './styles.css'
 import { ServiceMinDTO } from '../../../models/servico'
 import { ServicesMin } from '../../../temp-repository/temp_services'
