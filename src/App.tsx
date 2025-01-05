@@ -3,6 +3,7 @@ import { history } from "./utils/history";
 import Home from "./routes/Home";
 import HomeIndex from "./routes/Home/HomeIndex";
 import Service from "./routes/Home/Service";
+import SobreNos from "./routes/Home/SobreNos";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route path='/' element={<Home />} >
           <Route index element={<HomeIndex />} />
           <Route path="servico" element={<Service />} />
-          <Route path="sobre-nos" element={<Service />} />
+          <Route path="sobre-nos" element={<SobreNos />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

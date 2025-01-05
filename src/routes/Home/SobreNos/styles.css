@@ -1,0 +1,26 @@
+#about-us-section {
+    padding: 30px 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#about-us-section h1 {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.yellow p {
+    color: var(--mhg-font-secondary-color);
+}
+
+.w100 {
+    width: 100%;
+    max-width: 100%;
+}
