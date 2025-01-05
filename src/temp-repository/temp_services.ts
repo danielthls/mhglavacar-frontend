@@ -72,7 +72,7 @@ export const Services: ServiceDTO[] = [
             "não deixando de ter cuidado e atenção " +
             "para entregar um resultado de " +
             "qualidade.",
-        imgUrl: '#',
+        imgUrl: 'https://i.vgy.me/Rw39q6.png',
         precos: [
             {
                 id: 1,
@@ -277,7 +277,7 @@ export const Services: ServiceDTO[] = [
         idServico: 5,
         nomeServico: 'Lavagem de Motos',
         descricao: 'Serviços adicionais:',
-        imgUrl: '#',
+        imgUrl: 'https://i.vgy.me/Vv9rvj.png',
         precos: [
             {
                 id: 13,
@@ -521,7 +521,7 @@ export const Services: ServiceDTO[] = [
             'riscos na pintura e contaminações fazem a luz refletir de maneira desfocada aos nossos olhos, ' +
             'impedindo de vermos um reflexo bonito sobre a superfície do carro, trazendo um aspecto ' +
             'fosco e causando grande desvalorização do veículo.',
-        imgUrl: '#',
+        imgUrl: 'https://i.vgy.me/h9SNsk.png',
         precos: [
             {
                 id: 17,
@@ -567,7 +567,7 @@ export const Services: ServiceDTO[] = [
     {
 
         idServico: 12,
-        nomeServico: 'Polimento Técnico',
+        nomeServico: 'Vitrificação',
         descricao: 'A Vitrificação automotiva é um ' +
             'processo em que é aplicado um ' +
             'produto específico sobre a lataria do ' +

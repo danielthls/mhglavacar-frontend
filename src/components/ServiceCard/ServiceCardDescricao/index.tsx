@@ -1,29 +1,29 @@
-import { MarcadorDTO } from '../../../models/marcador';
+import { ServiceDTO } from '../../../models/servico';
 import './styles.css'
 
 type Props = {
-    descricao: string;
-    detalhes: MarcadorDTO[];
+    servico: ServiceDTO
 }
 
-export default function ServiceCardDescricao({ descricao, detalhes }: Props) {
+export default function ServiceCardDescricao({ servico }: Props) {
 
-    const paragraphs = descricao.split('.').filter(segment => segment.trim() !== '');
+    const paragraphs = servico.descricao.split('.').filter(segment => segment.trim() !== '');
 
     return (
         <div className='mhg-container mhg-servico-container'>
             <div className='mhg-section-text mhg-servico-descricao' >
                 {
                     paragraphs.map((paragraph, index) =>
-                        <p key={index}>{paragraph.trim()}.</p>
+                        <p key={index}>{paragraph.trim()}{paragraph.slice(-1) != ':' ? '.' : ''}</p>
                     )
                 }
+                <img src={servico.imgUrl} alt="" />
             </div>
             <div className='mhg-section-text mhg-servico-detalhes'>
                 <ul>
                     {
-                        detalhes &&
-                        detalhes.map(item =>
+                        servico.detalhes &&
+                        servico.detalhes.map(item =>
                             <li key={item.id}>{item.marcador}</li>
                         )
                     }

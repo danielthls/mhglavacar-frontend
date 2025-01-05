@@ -15,7 +15,7 @@ export default function ServiceCard({ service }: Props) {
                 <h2>{service.nomeServico.toUpperCase()}</h2>
             </div>
             <div>
-                <ServiceCardDescricao descricao={service.descricao} detalhes={service.detalhes} />
+                <ServiceCardDescricao servico={service} />
             </div>
             <div className='mhg-service-obs-price-container'>
 
