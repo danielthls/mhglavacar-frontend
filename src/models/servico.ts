@@ -7,6 +7,7 @@ export type ServiceDTO = {
     descricao: string;
     imgUrl: string;
     precos: PrecoPorServicoDTO[];
+    detalheLabel: string;
     detalhes: MarcadorDTO[];
     observacao: string;
     precoVariavel: boolean;

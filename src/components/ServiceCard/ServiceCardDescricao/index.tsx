@@ -20,6 +20,7 @@ export default function ServiceCardDescricao({ servico }: Props) {
                 <img src={servico.imgUrl} alt="" />
             </div>
             <div className='mhg-section-text mhg-servico-detalhes'>
+                <h3>{servico.detalheLabel}</h3>
                 <ul>
                     {
                         servico.detalhes &&

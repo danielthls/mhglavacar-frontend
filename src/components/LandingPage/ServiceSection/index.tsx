@@ -12,7 +12,7 @@ export default function ServiceSection() {
     return (
         <section id='lp-service-section'>
             <div className='mhg-section-container'>
-                <h1 className='mhg-section-title'>NOSSOS SERVIÇOS</h1>
+                <h1 className='mhg-section-title title-center'>NOSSOS SERVIÇOS</h1>
                 <div id='service-section-cards'>
                     {
                         services &&

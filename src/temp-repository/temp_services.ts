@@ -15,7 +15,7 @@ const CategoriesMin: CategoriaMinDTO[] = [
     },
     {
         idCategoria: 3,
-        nomeCategoria: 'SUV e Caminhões',
+        nomeCategoria: 'SUV e Caminhonetes',
         tipo: 1
     },
     {
@@ -65,6 +65,35 @@ export const ServicesMin: ServiceMinDTO[] = [
 
 export const Services: ServiceDTO[] = [
     {
+        idServico: 3,
+        nomeServico: 'Ducha',
+        descricao: 'Manter o carro sempre limpo é a preocupação de boa parte dos motoristas. ' +
+            'Uma lavagem bem feita proporciona maior conforto ao dirigir, preserva a ' +
+            'pintura, evita o acúmulo de fungos e bactérias e valoriza o veículo.',
+        imgUrl: '#',
+        precos: [
+            {
+                id: 7,
+                categoria: CategoriesMin[0],
+                valorPreco: 40.0
+            },
+            {
+                id: 8,
+                categoria: CategoriesMin[1],
+                valorPreco: 40.0
+            },
+            {
+                id: 9,
+                categoria: CategoriesMin[2],
+                valorPreco: 60.0
+            }
+        ],
+        detalheLabel: '',
+        detalhes: [],
+        observacao: '',
+        precoVariavel: false
+    },
+    {
         idServico: 1,
         nomeServico: "Limpeza Externa",
         descricao: "Consiste em uma limpeza mais básica, " +
@@ -90,6 +119,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 100.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 1,
@@ -141,6 +171,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 130.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 6,
@@ -175,34 +206,6 @@ export const Services: ServiceDTO[] = [
         precoVariavel: false
     },
     {
-        idServico: 3,
-        nomeServico: 'Lavagem Simples',
-        descricao: 'Manter o carro sempre limpo é a preocupação de boa parte dos motoristas. ' +
-            'Uma lavagem bem feita proporciona maior conforto ao dirigir, preserva a ' +
-            'pintura, evita o acúmulo de fungos e bactérias e valoriza o veículo.',
-        imgUrl: '#',
-        precos: [
-            {
-                id: 7,
-                categoria: CategoriesMin[0],
-                valorPreco: 40.0
-            },
-            {
-                id: 8,
-                categoria: CategoriesMin[1],
-                valorPreco: 40.0
-            },
-            {
-                id: 9,
-                categoria: CategoriesMin[2],
-                valorPreco: 60.0
-            }
-        ],
-        detalhes: [],
-        observacao: '',
-        precoVariavel: false
-    },
-    {
         idServico: 4,
         nomeServico: "Limpeza Detalhada",
         descricao: "Essa lavagem é um processo minucioso do " +
@@ -228,6 +231,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 160.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 13,
@@ -270,13 +274,13 @@ export const Services: ServiceDTO[] = [
                 marcador: "Remoção de piche na pintura."
             }
         ],
-        observacao: 'Recomendado a cada 3 meses.',
+        observacao: '',
         precoVariavel: false
     },
     {
         idServico: 5,
         nomeServico: 'Lavagem de Motos',
-        descricao: 'Serviços adicionais:',
+        descricao: '',
         imgUrl: 'https://i.vgy.me/Vv9rvj.png',
         precos: [
             {
@@ -290,6 +294,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 120.0
             }
         ],
+        detalheLabel: 'Serviços adicionais',
         detalhes: [
             {
                 id: 23,
@@ -313,7 +318,7 @@ export const Services: ServiceDTO[] = [
     },
     {
         idServico: 6,
-        nomeServico: 'Limpeza do Couros',
+        nomeServico: 'Limpeza e tratamento de bancos de Couro',
         descricao: 'Tem como objetivo principal manter o couro limpo, conservado e evitarpossíveis ressecamentos',
         imgUrl: '#',
         precos: [
@@ -323,6 +328,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 180.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 27,
@@ -333,12 +339,12 @@ export const Services: ServiceDTO[] = [
                 marcador: "Hidratação dos couros."
             }
         ],
-        observacao: '',
+        observacao: 'Recomendado a cada 6 meses.',
         precoVariavel: false
     },
     {
         idServico: 7,
-        nomeServico: 'Tratamento dos Farois',
+        nomeServico: 'Polimento dos Faróis',
         descricao: 'Os faróis são os olhos do carro e também ' +
             'foram feitos para brilhar. Eles são' +
             'responsáveis por iluminar a via em' +
@@ -354,6 +360,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 110.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 29,
@@ -399,6 +406,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 110.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 33,
@@ -422,7 +430,7 @@ export const Services: ServiceDTO[] = [
     },
     {
         idServico: 9,
-        nomeServico: 'Tratamento de Motor',
+        nomeServico: 'Limpeza de Motor',
         descricao: 'A limpeza do motor é importante para o ' +
             'bom funcionamento mecânico e elétrico, ' +
             'porque com o tempo impurezas se ' +
@@ -445,6 +453,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 130.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 37,
@@ -489,6 +498,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 380.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 40,
@@ -539,6 +549,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 350.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 42,
@@ -595,6 +606,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 1200.0
             }
         ],
+        detalheLabel: '',
         detalhes: [],
         observacao: '',
         precoVariavel: true
@@ -622,6 +634,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 1100.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 47,
@@ -665,6 +678,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 1550.0
             }
         ],
+        detalheLabel: '',
         detalhes: [
             {
                 id: 51,
@@ -710,6 +724,7 @@ export const Services: ServiceDTO[] = [
                 valorPreco: 110.0
             }
         ],
+        detalheLabel: '',
         detalhes: [],
         observacao: '',
         precoVariavel: true
