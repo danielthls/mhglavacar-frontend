@@ -30,7 +30,7 @@ export default function SearchBar({ onSearch }: Props) {
             <input
                 type="text"
                 value={text}
-                placeholder="Nome do produto"
+                placeholder="Buscar Serviço"
                 onChange={handleChange} />
             <button onClick={handleResetClick}>🗙</button>
         </form>
