@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import './styles.css'
 import { ServiceDTO } from '../../../models/servico'
-import { tempServices } from '../../../temp-repository/temp_services'
 import ServiceCard from '../../../components/ServiceCard'
 import { tempFilterService } from '../../../utils/temp_filter'
 import SearchBar from '../../../components/SearchBar'
