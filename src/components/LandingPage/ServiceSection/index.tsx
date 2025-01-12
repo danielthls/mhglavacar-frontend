@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './styles.css'
 import { ServiceMinDTO } from '../../../models/servico'
-import { ServicesMin } from '../../../temp-repository/temp_services'
+import { tempServicesMin } from '../../../temp-repository/temp_services'
 import LandingPageServiceCard from '../../LandingPageServiceCard'
 import CteButtons from '../CteButtons'
 
 export default function ServiceSection() {
 
-    const [services,] = useState<ServiceMinDTO[]>(ServicesMin)
+    const [services,] = useState<ServiceMinDTO[]>(tempServicesMin)
 
     return (
         <section id='lp-service-section'>

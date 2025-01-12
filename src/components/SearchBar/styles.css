@@ -1,0 +1,42 @@
+.mhg-search-bar {
+    height: 40px;
+    display: flex;
+    color: var(--mhg-color-font-primary);
+  }
+  
+  .mhg-search-bar button,
+  .mhg-search-bar input {
+    border: 1px solid var(--mhg-color-card-border);
+  }
+  
+  .mhg-search-bar input {
+    width: calc(100% - 80px);
+    border-left: none;
+    border-right: none;
+    padding: 0 10px;
+    font-size: 16px;
+    color: var(--mhg-color-font-primary);
+  }
+  
+  .mhg-search-bar input:focus {
+    outline: none;
+  }
+  
+  .mhg-search-bar input::placeholder {
+    color: var(--mhg-color-font-placeholder);
+  }
+  
+  .mhg-search-bar button {
+    width: 40px;
+    color: var(--mhg-color-font-primary);
+  }
+  
+  .mhg-search-bar button[type="submit"] {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .mhg-search-bar button[type="reset"] {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+  }

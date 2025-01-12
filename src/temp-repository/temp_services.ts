@@ -2,7 +2,7 @@ import { CategoriaMinDTO } from '../models/categoria'
 import '../models/servico'
 import { ServiceDTO, ServiceMinDTO } from '../models/servico'
 
-const CategoriesMin: CategoriaMinDTO[] = [
+const tempCategoriesMin: CategoriaMinDTO[] = [
     {
         idCategoria: 1,
         nomeCategoria: 'Hatch',
@@ -45,7 +45,7 @@ const CategoriesMin: CategoriaMinDTO[] = [
     }
 ]
 
-export const ServicesMin: ServiceMinDTO[] = [
+export const tempServicesMin: ServiceMinDTO[] = [
     {
         idServico: 1,
         nomeServico: "Polimento Técnico",
@@ -63,7 +63,7 @@ export const ServicesMin: ServiceMinDTO[] = [
     }
 ]
 
-export const Services: ServiceDTO[] = [
+export const tempServices: ServiceDTO[] = [
     {
         idServico: 3,
         nomeServico: 'Ducha',
@@ -74,17 +74,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 7,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 40.0
             },
             {
                 id: 8,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 40.0
             },
             {
                 id: 9,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 60.0
             }
         ],
@@ -105,17 +105,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 1,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 70.0
             },
             {
                 id: 2,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 70.0
             },
             {
                 id: 3,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 100.0
             }
         ],
@@ -157,17 +157,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 4,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 90.0
             },
             {
                 id: 5,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 90.0
             },
             {
                 id: 6,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 130.0
             }
         ],
@@ -217,17 +217,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 10,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 110.0
             },
             {
                 id: 11,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 110.0
             },
             {
                 id: 12,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 160.0
             }
         ],
@@ -285,12 +285,12 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 13,
-                categoria: CategoriesMin[3],
+                categoria: tempCategoriesMin[3],
                 valorPreco: 35.0
             },
             {
                 id: 14,
-                categoria: CategoriesMin[4],
+                categoria: tempCategoriesMin[4],
                 valorPreco: 120.0
             }
         ],
@@ -324,7 +324,7 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 14,
-                categoria: CategoriesMin[5],
+                categoria: tempCategoriesMin[5],
                 valorPreco: 180.0
             }
         ],
@@ -356,7 +356,7 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 14,
-                categoria: CategoriesMin[5],
+                categoria: tempCategoriesMin[5],
                 valorPreco: 110.0
             }
         ],
@@ -402,7 +402,7 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 14,
-                categoria: CategoriesMin[5],
+                categoria: tempCategoriesMin[5],
                 valorPreco: 110.0
             }
         ],
@@ -444,12 +444,12 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 15,
-                categoria: CategoriesMin[6],
+                categoria: tempCategoriesMin[6],
                 valorPreco: 60.0
             },
             {
                 id: 16,
-                categoria: CategoriesMin[7],
+                categoria: tempCategoriesMin[7],
                 valorPreco: 130.0
             }
         ],
@@ -484,17 +484,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 17,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 280.0
             },
             {
                 id: 18,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 300.0
             },
             {
                 id: 19,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 380.0
             }
         ],
@@ -535,17 +535,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 17,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 230.0
             },
             {
                 id: 18,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 250.0
             },
             {
                 id: 19,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 350.0
             }
         ],
@@ -592,17 +592,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 20,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 900.0
             },
             {
                 id: 21,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 900.0
             },
             {
                 id: 22,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 1200.0
             }
         ],
@@ -620,17 +620,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 23,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 800.0
             },
             {
                 id: 24,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 850.0
             },
             {
                 id: 25,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 1100.0
             }
         ],
@@ -664,17 +664,17 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 23,
-                categoria: CategoriesMin[0],
+                categoria: tempCategoriesMin[0],
                 valorPreco: 1000.0
             },
             {
                 id: 24,
-                categoria: CategoriesMin[1],
+                categoria: tempCategoriesMin[1],
                 valorPreco: 1150.0
             },
             {
                 id: 25,
-                categoria: CategoriesMin[2],
+                categoria: tempCategoriesMin[2],
                 valorPreco: 1550.0
             }
         ],
@@ -720,7 +720,7 @@ export const Services: ServiceDTO[] = [
         precos: [
             {
                 id: 23,
-                categoria: CategoriesMin[5],
+                categoria: tempCategoriesMin[5],
                 valorPreco: 110.0
             }
         ],
