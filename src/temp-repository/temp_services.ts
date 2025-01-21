@@ -95,7 +95,7 @@ export const tempServices: ServiceDTO[] = [
     },
     {
         idServico: 1,
-        nomeServico: "Limpeza Externa",
+        nomeServico: "Limpeza sem Cera",
         descricao: "Consiste em uma limpeza mais básica, " +
             "priorizando a parte externa do veículo, " +
             "não deixando de ter cuidado e atenção " +
@@ -106,12 +106,12 @@ export const tempServices: ServiceDTO[] = [
             {
                 id: 1,
                 categoria: tempCategoriesMin[0],
-                valorPreco: 70.0
+                valorPreco: 80.0
             },
             {
                 id: 2,
                 categoria: tempCategoriesMin[1],
-                valorPreco: 70.0
+                valorPreco: 80.0
             },
             {
                 id: 3,
@@ -119,15 +119,15 @@ export const tempServices: ServiceDTO[] = [
                 valorPreco: 100.0
             }
         ],
-        detalheLabel: '',
+        detalheLabel: 'Serviços inclusos',
         detalhes: [
             {
                 id: 1,
-                marcador: "Pré lavagem"
+                marcador: "Aspiração interior (bancos e carpete)."
             },
             {
                 id: 2,
-                marcador: "Lavagem da pintura com luva de microfibra",
+                marcador: "Lavagem da pintura com pano de microfibra",
             },
             {
                 id: 3,
@@ -147,7 +147,7 @@ export const tempServices: ServiceDTO[] = [
     },
     {
         idServico: 2,
-        nomeServico: "Limpeza Completa",
+        nomeServico: "Limpeza com Cera",
         descricao: "Uma limpeza para aqueles que buscam " +
             "mais do que manter o carro limpo por " +
             "fora, mantendo também um clima " +
@@ -158,12 +158,12 @@ export const tempServices: ServiceDTO[] = [
             {
                 id: 4,
                 categoria: tempCategoriesMin[0],
-                valorPreco: 90.0
+                valorPreco: 100.0
             },
             {
                 id: 5,
                 categoria: tempCategoriesMin[1],
-                valorPreco: 90.0
+                valorPreco: 100.0
             },
             {
                 id: 6,
@@ -171,11 +171,11 @@ export const tempServices: ServiceDTO[] = [
                 valorPreco: 130.0
             }
         ],
-        detalheLabel: '',
+        detalheLabel: 'Serviços inclusos',
         detalhes: [
             {
                 id: 6,
-                marcador: "Lavagem da pintura com luva de microfibra."
+                marcador: "Lavagem da pintura com pano de microfibra."
             },
             {
                 id: 7,
@@ -207,7 +207,7 @@ export const tempServices: ServiceDTO[] = [
     },
     {
         idServico: 4,
-        nomeServico: "Limpeza Detalhada",
+        nomeServico: "Limpeza Detalhada com celante sintético",
         descricao: "Essa lavagem é um processo minucioso do " +
             "veículo, com mais atenção aos detalhes " +
             "externos, removendo sujeiras que " +
@@ -218,12 +218,12 @@ export const tempServices: ServiceDTO[] = [
             {
                 id: 10,
                 categoria: tempCategoriesMin[0],
-                valorPreco: 110.0
+                valorPreco: 130.0
             },
             {
                 id: 11,
                 categoria: tempCategoriesMin[1],
-                valorPreco: 110.0
+                valorPreco: 130.0
             },
             {
                 id: 12,
@@ -231,7 +231,7 @@ export const tempServices: ServiceDTO[] = [
                 valorPreco: 160.0
             }
         ],
-        detalheLabel: '',
+        detalheLabel: 'Serviços inclusos',
         detalhes: [
             {
                 id: 13,
