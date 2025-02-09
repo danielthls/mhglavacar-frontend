@@ -42,6 +42,16 @@ const tempCategoriesMin: CategoriaMinDTO[] = [
         idCategoria: 8,
         nomeCategoria: 'Rotativa',
         tipo: 2
+    },
+    {
+        idCategoria: 9,
+        nomeCategoria: 'Carro Grande',
+        tipo: 1
+    },
+    {
+        idCategoria: 10,
+        nomeCategoria: 'Carro Pequeno',
+        tipo: 1
     }
 ]
 
@@ -207,7 +217,7 @@ export const tempServices: ServiceDTO[] = [
     },
     {
         idServico: 4,
-        nomeServico: "Limpeza Detalhada com celante sintético",
+        nomeServico: "Limpeza Detalhada com selante cerâmico",
         descricao: "Essa lavagem é um processo minucioso do " +
             "veículo, com mais atenção aos detalhes " +
             "externos, removendo sujeiras que " +
@@ -254,20 +264,8 @@ export const tempServices: ServiceDTO[] = [
                 marcador: "Limpeza das paletas do para-brisa."
             },
             {
-                id: 18,
-                marcador: "Limpeza dos trilhos dos vidros (canaleta)."
-            },
-            {
                 id: 19,
                 marcador: "Limpeza do compartimento de combustível."
-            },
-            {
-                id: 20,
-                marcador: "Ponteira do escapamento."
-            },
-            {
-                id: 21,
-                marcador: "Remoção das placas para limpeza."
             },
             {
                 id: 22,
@@ -325,7 +323,7 @@ export const tempServices: ServiceDTO[] = [
             {
                 id: 14,
                 categoria: tempCategoriesMin[5],
-                valorPreco: 180.0
+                valorPreco: 220.0
             }
         ],
         detalheLabel: '',
@@ -403,7 +401,7 @@ export const tempServices: ServiceDTO[] = [
             {
                 id: 14,
                 categoria: tempCategoriesMin[5],
-                valorPreco: 110.0
+                valorPreco: 180.0
             }
         ],
         detalheLabel: '',
@@ -444,13 +442,13 @@ export const tempServices: ServiceDTO[] = [
         precos: [
             {
                 id: 15,
-                categoria: tempCategoriesMin[6],
+                categoria: tempCategoriesMin[9],
                 valorPreco: 60.0
             },
             {
                 id: 16,
-                categoria: tempCategoriesMin[7],
-                valorPreco: 130.0
+                categoria: tempCategoriesMin[8],
+                valorPreco: 80.0
             }
         ],
         detalheLabel: '',
@@ -485,17 +483,17 @@ export const tempServices: ServiceDTO[] = [
             {
                 id: 17,
                 categoria: tempCategoriesMin[0],
-                valorPreco: 280.0
+                valorPreco: 300.0
             },
             {
                 id: 18,
                 categoria: tempCategoriesMin[1],
-                valorPreco: 300.0
+                valorPreco: 350.0
             },
             {
                 id: 19,
                 categoria: tempCategoriesMin[2],
-                valorPreco: 380.0
+                valorPreco: 400.0
             }
         ],
         detalheLabel: '',
@@ -715,13 +713,23 @@ export const tempServices: ServiceDTO[] = [
     {
         idServico: 15,
         nomeServico: 'Remoção de Película',
-        descricao: '',
+        descricao: 'Consiste na remoção de cola e limpeza geral do vidro.',
         imgUrl: '#',
         precos: [
             {
-                id: 23,
-                categoria: tempCategoriesMin[5],
+                id: 26,
+                categoria: tempCategoriesMin[0],
                 valorPreco: 110.0
+            },
+            {
+                id: 27,
+                categoria: tempCategoriesMin[1],
+                valorPreco: 150.0
+            },
+            {
+                id: 28,
+                categoria: tempCategoriesMin[2],
+                valorPreco: 200.0
             }
         ],
         detalheLabel: '',
